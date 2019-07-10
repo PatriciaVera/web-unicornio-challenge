@@ -1,0 +1,83 @@
+/*
+1. Header
+
+*/
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+
+/**************HEADER***********/
+header, .logo-header, .text-head{
+    background: #FCFCFC;
+}
+
+ul, li {
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    text-align: right;
+    justify-content: space-between;
+    vertical-align: middle; 
+}
+
+li {
+  padding: 0.5em;
+}
+
+.menu {
+  padding: 1.5em;
+}
+
+.logo{
+  position: relative;
+  top: 1.5em;
+  left: 0.7em;
+}
+
+.logo-header{
+  display: grid;
+  grid-template-columns: 100px;  
+}
+
+.icons{
+  padding: 300px 18px 20px 18px;
+  position: relative;
+}
+
+.icon-red{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 0px 32px 25px 32px;
+}
+
+.logo-header {
+  position: relative;
+  z-index: 10;
+  top: -6em;
+  left: -0.8em;
+  box-shadow: 2px 1px 3px -1px #D3DAE5;
+}
+
+.text-head {
+  box-shadow: 5px 3px 3px -1px #D3DAE5;
+}
+
+.title {
+  padding: 10px 0px 20px 10px;
+}
+
+/**********AVATAR***************/
+
+.avatar-destacado{
+  width: auto;
+  height: 200px;
+}
