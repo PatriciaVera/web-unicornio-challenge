@@ -1,5 +1,6 @@
 /*
 1. Header
+2. Font
 
 */
 
@@ -80,4 +81,15 @@ li {
 .avatar-destacado{
   width: auto;
   height: 200px;
+}
+
+/********Font*********/
+body {
+  font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  font-size: 3.5em;
 }
