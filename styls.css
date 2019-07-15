@@ -78,9 +78,20 @@ li {
 
 /**********AVATAR***************/
 
-.avatar-destacado{
-  width: auto;
-  height: 200px;
+#img-unicornio {
+  max-width: 280px;
+  min-width: 200px;
+  top:-140px;
+}
+
+#img-unicornio-movil {
+  max-width: 280px;
+  min-width: 200px;
+  margin-top: 10%;
+}
+
+.rounded {
+  border-radius: .45rem!important;
 }
 
 /********Font*********/
@@ -92,4 +103,15 @@ h1 {
   font-family: 'Dosis', sans-serif;
   font-weight: bold;
   font-size: 3.5em;
+  color: #0D0139;
 }
+
+/***********BODY**************/
+body {
+  background-color: #F7FCFF;
+}
+
+p {
+  color: #A4A9BD;
+}
+
