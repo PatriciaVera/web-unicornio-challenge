@@ -95,9 +95,6 @@ li {
 }
 
 /********Font*********/
-body {
-  font-family: 'Dosis', sans-serif;
-}
 
 h1 {
   font-family: 'Dosis', sans-serif;
@@ -106,12 +103,86 @@ h1 {
   color: #0D0139;
 }
 
-/***********BODY**************/
-body {
-  background-color: #F7FCFF;
+h4 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  color: #0D0139;
 }
 
 p {
-  color: #A4A9BD;
+  color: #596188;
+  font-family: 'Dosis', sans-serif;
+  font-style: normal;
 }
 
+/***********BODY**************/
+body {
+  background-color: #F7FCFF;
+  font-family: 'Dosis', sans-serif;
+  font-style: normal;
+}
+
+/**********ICONS BODY************/
+
+#icons {
+  vertical-align: middle;
+  display: inline-flex;
+}
+
+#icons-container {
+  background-color: #FCFCFC;
+  height: 100px;
+  padding: 2% 3% 2% 3%;
+  margin: 2.5%;
+  vertical-align: middle;
+  box-shadow: -2px 8px 7px -2px rgba(212,220,230,0.8);
+}
+
+.icon-superior{
+  position: relative;
+  top: -230px;
+  left: 170px;
+  width: 350px;
+}
+
+.icon-inferior {
+  position: relative;
+  top: -230px;
+  left: 270px;
+  width: 350px;
+}
+
+
+.icon-superior-movil{
+  position: relative;
+  left: 0%;
+  width: 300px;
+}
+
+.icon-inferior-movil {
+  position: relative;
+  left: 17%;
+  width: 300px;
+}
+
+/*********Rocket*******/
+
+#icons-rocket {
+  position: relative;
+  top: -300px;
+  left: 750px;
+  width: 100%;
+}
+
+#icons-rocket-movil {
+  position: relative;
+  top: 10%;
+  left: 50%;
+  right: 50%;
+  margin: auto;
+}
+
+.rocket-container {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
