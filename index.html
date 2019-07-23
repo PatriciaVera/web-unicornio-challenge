@@ -7,33 +7,41 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styls.css">
+    <link rel="stylesheet" href="./css/styls.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/solid.css">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
     <title>🦄 Reto del Curso Profesional de Desarrollo Web</title>
 </head>
 <body>
     <header>
+    <nav>
         <div class="container-fluid">
             <div class="row">
-                <div class="menu col-xl">
-                        <ul class="float-right">
-                            <li>Inicio</li>
-                            <li>Sobre mí</li>
-                            <li>Portafolio</li>
-                        </ul>
+                <div class="menu col-xl" id="header">
+                        <div class="row float-left">
+                            <div class="cl-xs-1">
+                                 <a href="#"><img src="./icons/unicorn.png" alt="unicorn" class="img-responsive logo"></a>
+                                 <a href="#" class="btn-menu" id="btn-menu"><i class="fas fa-align-right"></i></a>
+                             </div>
+                        </div>
+                        <div class="float-right">
+                            <a href="#"><i class="fas fa-home"></i> Inicio</a>
+                            <a href="#">Sobre mí</a>
+                            <a href="#">Portafolio</a>
+                        </div>
                 </div>
            </div>
         <div>
+        </nav>
         <div class="container-fluid social-items">
-            <div class="row float-left logo-header">
-                <div class="cl-xs-1">
-                    <img src="./icons/unicorn.png" alt="unicorn" class="img-responsive logo">
-                </div>
-                <div class="row icons float-left">
+                <div class="row icons float-left logo-header">
                     <div class="cl-xs-1">
-                        <img class="icon-red" src="./icons/instagram.png" alt="Instagram">
-                        <img class="icon-red" src="./icons/twitter.png" alt="Twitter">
-                        <img class="icon-red" src="./icons/whatsapp.png" alt="whatsapp">
-                        <img class="icon-red" src="./icons/github.png" alt="GitHub">
+                        <a href="#"><img class="icon-red" src="./icons/instagram.png" alt="Instagram"></a>
+                        <a href="#"></a><img class="icon-red" src="./icons/twitter.png" alt="Twitter"></a>
+                        <a href="#"></a><img class="icon-red" src="./icons/whatsapp.png" alt="whatsapp"></a>
+                        <a href="#"></a><img class="icon-red" src="./icons/github.png" alt="GitHub"></a>
                     </div>
                 </div>
             </div>
@@ -182,5 +190,8 @@
         <div class="footer-unicornio">
         </div>
     </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/headroom.min.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
