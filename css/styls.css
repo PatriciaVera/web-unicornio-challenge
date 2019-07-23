@@ -46,7 +46,7 @@ a {
   position: fixed;
   background: #FCFCFC;
   z-index: 12;
-  top: 0;
+  top: -12px;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -77,12 +77,12 @@ a {
 
 .logo{
   position: relative;
-  height: 80%;
+  height: 50%;
 }
 
 .logo-header{
   display: grid;
-  grid-template-columns: 100px;  
+  grid-template-columns: 90px;  
 }
 
 .icons{
@@ -116,33 +116,55 @@ a {
 }
 /****************EFECTOS MENU****************/
 
-.headroom {
+header .menu .logo .btn-menu {
+  display: none;
+}
+
+.headroom {                                  
   transition: transform .3s ease;
 }
 
 .headroom--pinned {
   transform: translateY(0%);
+  box-shadow: -2px 6px 6px -2px rgba(212,220,230,0.7);
 }
 
 .headroom--unpinned {
   transform: translateY(-100%);
+  z-index: 13;
+  position: relative;
 }
 
 /*****MEDIAQUERIES*********/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
   header .menu {
     flex-direction: column; 
   }
-  header .menu #logo-header {
+  header .menu .logo .btn-menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
     padding: 1em;
+    width: 100%;
   }
-  header .menu .logo .btn-menu {
+  header .menu .btn-menu {
     display: inline-block;
+    justify-content: space-between;
+  }
+  .menu-responsive-home{
+    width: 100%;
+  }
+  .btn-menu{
+    position: relative;
+    left: 135%;
+  }
+  header .menu .enlaces {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
