@@ -1,0 +1,453 @@
+/*
+1. Header
+2. Font
+
+*/
+*{
+  padding: 0p;
+  margin: 0;
+  box-sizing: border-box
+}
+
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+
+/**************HEADER***********/
+header, .logo-header, .text-head{
+    background: #FCFCFC;
+}
+
+a {
+    text-decoration: none;
+    display: inline;
+    text-align: right;
+    justify-content: space-between;
+    vertical-align: middle; 
+}
+
+a {
+  padding: 0.5em 1.4em 0.5em 1.4em;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  color: #0D0139;
+}
+
+.menu {
+  padding: 1em 2em 1em 2em;
+  position: fixed;
+  background: #FCFCFC;
+  z-index: 12;
+  top: -12px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .btn-menu {
+  display: none;
+  color: #E92042;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.menu a{
+  text-decoration: none; 
+  display: inline-block;
+  text-align: center;
+}
+
+.menu a:hover {
+  color: #E92042;
+}
+
+.menu i {
+  margin-right: 5px;
+}
+
+.logo{
+  position: relative;
+  height: 50%;
+}
+
+.logo-header{
+  display: grid;
+  grid-template-columns: 90px;  
+}
+
+.icons{
+  padding: 300px 18px 20px 18px;
+  position: relative;
+}
+
+.icon-red{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 0px 32px 25px 32px;
+  cursor: pointer;
+}
+
+.logo-header {
+  position: relative;
+  z-index: 10;
+  top: -4em;
+  left: -0.8em;
+  box-shadow: 2px 1px 3px -1px #D3DAE5;
+}
+
+.text-head {
+  box-shadow: 5px 3px 3px -1px #D3DAE5;
+  position: relative;
+  top: 50px;
+}
+
+.title {
+  padding: 15px 0px 20px 10px;
+  margin: 60px 10px 20px 30px;
+}
+
+.container-title-movil {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+/****************EFECTOS MENU****************/
+
+header .menu .logo .btn-menu {
+  display: none;
+}
+
+.headroom {                                  
+  transition: transform .3s ease;
+}
+
+.headroom--pinned {
+  transform: translateY(0%);
+  box-shadow: -2px 6px 6px -2px rgba(212,220,230,0.7);
+}
+
+.headroom--unpinned {
+  transform: translateY(-100%);
+  z-index: 13;
+  position: relative;
+}
+
+/*****MEDIAQUERIES*********/
+
+@media screen and (max-width: 500px) {
+  header .menu {
+    flex-direction: column; 
+  }
+  header .menu .logo .btn-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    width: 100%;
+  }
+  header .menu .btn-menu {
+    display: inline-block;
+    justify-content: space-between;
+  }
+  .menu-responsive-home{
+    width: 100%;
+  }
+  .btn-menu{
+    position: relative;
+    left: 135%;
+  }
+  header .menu .enlaces {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+
+
+/**********AVATAR***************/
+
+#img-unicornio {
+  max-width: 250px;
+  min-width: 200px;
+  top:-100px;
+}
+
+#img-unicornio-movil {
+  max-width: 250px;
+  min-width: 200px;
+  margin-top: 15%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rounded {
+  border-radius: .45rem!important;
+}
+
+.imagen-unicornio-movil{
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+}
+/********Font*********/
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  color: #0D0139;
+}
+
+h2 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  color: #0D0139;
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  color: #0D0139;
+}
+
+p {
+  color: #596188;
+  font-family: 'Dosis', sans-serif;
+  font-style: normal;
+}
+
+/***********BODY**************/
+body {
+  background-color: #F7FCFF;
+  font-family: 'Dosis', sans-serif;
+  font-style: normal;
+  padding-top: 5px;
+}
+
+/**********ICONS BODY CONTENIDO************/
+
+#icons {
+  vertical-align: middle;
+  display: inline-flex;
+}
+
+#icons-container {
+  background-color: #FCFCFC;
+  height: 100px;
+  padding: 2% 3% 2% 3%;
+  margin: 2.5%;
+  vertical-align: middle;
+  box-shadow: -2px 8px 7px -2px rgba(212,220,230,0.8);
+}
+
+.icon-superior{
+  position: relative;
+  top: -190px;
+  left: 80px;
+  width: 350px;
+}
+
+.icon-inferior {
+  position: relative;
+  top: -190px;
+  left: 180px;
+  width: 350px;
+}
+
+
+.icon-superior-movil{
+  position: relative;
+  left: 0%;
+  width: 300px;
+}
+
+.icon-inferior-movil {
+  position: relative;
+  left: 17%;
+  width: 300px;
+}
+
+/*********Rocket*******/
+
+#icons-rocket {
+  position: relative;
+  top: -300px;
+  left: 780px;
+  width: 100%;
+}
+
+#icons-rocket-movil {
+  position: relative;
+  top: 10%;
+  left: 165px;
+  right: 50%;
+  margin: auto;
+}
+
+.rocket-container {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+
+/*****SOBRE MÍ*******/
+
+#description {
+  position: relative;
+  top: -350px;
+  margin: auto;
+  vertical-align: middle;
+  display: grid;
+  left: 25px;
+  height: 50px;
+  }
+
+
+  #parrafo-description{
+    background-color: #FCFCFC;
+    height: 120px;
+    padding: 2%;
+    margin: auto;
+    vertical-align: middle;
+    box-shadow: -2px 8px 7px -2px rgba(212,220,230,0.8);
+    position: relative;
+    right: 156px;
+  }
+
+  #title-description {
+    position: relative;
+    left: 100px;
+    height: 300px;
+    width: 300px;
+  }
+
+  .title-movil {
+    position: relative;
+    margin-top: 5%;
+    left: 175px;
+    right: 50%;
+  }
+
+  #parrafo-description-movil {
+    text-align: center;
+    position: relative;
+    left: 4%;
+    background-color: #FCFCFC;
+    height: 140px;
+    width: 90%;
+    padding: 2%;
+    margin: 1%;
+    vertical-align: middle;
+    box-shadow: -2px 8px 7px -2px rgba(212,220,230,0.8);
+  }
+
+  /**********PROYECTOS***********/
+
+  #proyect-contenedor {
+    position: relative;
+    top: -200px;
+  }
+
+  .proyect-title {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    left: 40%;
+    margin: 4%;
+    width: 300px;
+  }
+
+#img-proyect{
+  width: 350px;
+  margin: 0px 10px 0px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.img-proyect-container {
+  position: relative;
+  left: 30px;
+}
+
+/****************FOOTER****************/
+
+.footer-unicornio {
+  background: #E92042;
+  height: 40px;
+  overflow:hidden;
+  display: grid;
+  float: right;
+}
+
+/*******ANIMATIONS*********/
+
+#icons-rocket {
+  animation: 4s;
+  animation-name: slidein;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  overflow:hidden;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+#img-unicornio, #img-unicornio-movil {
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+#icons-rocket-movil {
+  transform: translatey(0px);
+	animation: float-rocket 6s ease-in-out infinite;
+}
+
+@keyframes float-rocket {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
