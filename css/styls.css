@@ -115,7 +115,7 @@ a {
 .text-head {
   box-shadow: 5px 3px 3px -1px #D3DAE5;
   position: relative;
-  top: 50px;
+  padding-top: 1%;
 }
 
 .title {
@@ -129,6 +129,23 @@ a {
   text-align: center;
 }
 
+.text-head-movil{
+  box-shadow: 5px 3px 3px -1px #D3DAE5;
+    position: relative;
+    top: 0;
+}
+
+.row-movil-title {
+  background: #FCFCFC;
+}
+
+.unicornio-title-movil {
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #0D0139;
+  padding-top: 10%;
+}
 /****************EFECTOS MENU****************/
 
 header .menu .logo .btn-menu {
@@ -147,7 +164,7 @@ header .menu .logo .btn-menu {
 .headroom--unpinned {
   transform: translateY(-100%);
   z-index: 13;
-  position: relative;
+  position: fixed;
 }
 
 /*****MEDIAQUERIES*********/
