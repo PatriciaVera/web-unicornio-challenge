@@ -24,6 +24,18 @@ btnMenu.on('click', function(e){
     enlaces.slideToggle();
 });
 
+
+
+$(document).ready(function(){
+	$("#btn-menu").hover(function(){
+        icono.toggleClass('fa-align-right');
+        icono.toggleClass('fa-hamburger');
+		}, function(){
+            icono.toggleClass('fa-hamburger');
+            icono.toggleClass('fa-align-right');
+		});
+});
+
 $(window).on('resize', function(){
     if($(this).width() > 500){
         enlaces.show();
