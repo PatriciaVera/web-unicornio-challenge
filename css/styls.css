@@ -108,7 +108,7 @@ a {
   position: relative;
   z-index: 10;
   top: -4em;
-  left: -0.8em;
+  left: -0.9em;
   box-shadow: 2px 1px 3px -1px #D3DAE5;
 }
 
@@ -265,6 +265,27 @@ body {
 }
 
 /**********ICONS BODY CONTENIDO************/
+.icon-red:hover, .icon-red-movil:hover {
+  transform: scale(1.2);
+  transition: transform .5s ease;
+  color:  #dc3545;
+}
+
+.icon-red, .icon-red-movil {
+  color:  #9DA8BE;
+}
+
+
+.menu-header:hover {
+  transform: scale(1.2);
+  transition: transform .5s ease;
+}
+
+
+.fab {
+font-size: 30px;
+font-weight: normal;
+}
 
 #icons {
   vertical-align: middle;
@@ -416,6 +437,23 @@ body {
     cursor: pointer;
 }
 
+#img-proyect:active {
+  width: 32%;
+  overflow: hidden;
+  -webkit-box-shadow: 13px 13px 9px -6px rgba(14,1,57,0.5);
+  -moz-box-shadow: 13px 13px 9px -6px rgba(14,1,57,0.5);
+  box-shadow: 13px 13px 9px -6px rgba(14,1,57,0.5);
+}
+
+#img-proyect-movil:active {
+  width: 50%;
+  overflow: hidden;
+  -webkit-box-shadow: 13px 13px 9px -6px rgba(14,1,57,0.5);
+  -moz-box-shadow: 13px 13px 9px -6px rgba(14,1,57,0.5);
+  box-shadow: 13px 13px 9px -6px rgba(14,1,57,0.5);
+}
+
+
 
 .img-proyect-container {
   justify-content: center;
@@ -513,7 +551,7 @@ body {
 }
 
 .footer-unicornio {
-  background: linear-gradient(270deg, #900020, #983ce9, #fc29a1, #900020, #983ce9, #fc29a1, #900020, #983ce9);
+  background: linear-gradient(270deg, #f52c54, #983ce9, #fc29a1, #f52c54, #983ce9, #fc29a1, #f52c54, #983ce9 );
   background-size: 400% 400%;
   -webkit-animation: footeranimation 30s ease infinite;
   -moz-animation: footeranimatio 30s ease infinite;
@@ -535,3 +573,6 @@ body {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+
+
+
