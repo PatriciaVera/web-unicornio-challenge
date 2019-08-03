@@ -51,3 +51,23 @@ $(window).on('resize', function(){
 });
 
 
+var beepOne = $("#pop")[0];
+$("#enlaces a")
+	.mouseenter(function() {
+		beepOne.play();
+    });
+    
+var beepOne = $("#pop")[0];
+$("#icons-redes a")
+    .mouseenter(function() {
+        beepOne.play();
+    });
+
+var beepOne = $("#pop")[0];
+$("#icons-redes-escritorio a")
+    .mouseenter(function() {
+        beepOne.play();
+    });
+
+
+    
