@@ -447,7 +447,7 @@ body {
 /****************FOOTER****************/
 
 .footer-unicornio {
-  background: #E92042;
+  background-image: linear-gradient(45deg, rgb(153, 51, 255) 0%, rgb(255, 102, 102) 50%, rgb(153, 51, 255) 100%);
   height: 40px;
   overflow:hidden;
   display: grid;
@@ -472,6 +472,7 @@ body {
     margin-left: 0%;
   }
 }
+
 
 #img-unicornio, #img-unicornio-movil {
   box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -509,4 +510,28 @@ body {
 	100% {
 		transform: translatey(0px);
 	}
+}
+
+.footer-unicornio {
+  background: linear-gradient(270deg, #900020, #983ce9, #fc29a1, #900020, #983ce9, #fc29a1, #900020, #983ce9);
+  background-size: 400% 400%;
+  -webkit-animation: footeranimation 30s ease infinite;
+  -moz-animation: footeranimatio 30s ease infinite;
+   animation: footeranimatio 30s ease infinite;
+}
+
+@-webkit-keyframes footeranimatio {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes footeranimatio {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes footeranimatio { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
