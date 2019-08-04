@@ -281,7 +281,6 @@ body {
   transition: transform .5s ease;
 }
 
-
 .fab {
 font-size: 30px;
 font-weight: normal;
@@ -454,7 +453,6 @@ font-weight: normal;
 }
 
 
-
 .img-proyect-container {
   justify-content: center;
   display: flex;
@@ -497,7 +495,7 @@ font-weight: normal;
 #icons-rocket {
   animation: 4s;
   animation-name: slidein;
-  animation-iteration-count: 3;
+  animation-iteration-count: 20;
   animation-direction: alternate;
   overflow:hidden;
 }

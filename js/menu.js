@@ -50,6 +50,7 @@ $(window).on('resize', function(){
 
 });
 
+//Efectos de sonido  
 
 var beepOne = $("#pop")[0];
 $("#enlaces a")
@@ -69,5 +70,7 @@ $("#icons-redes-escritorio a")
         beepOne.play();
     });
 
-
-    
+    var presion = $("#clicmenu")[0];
+    document.querySelector('#btn-menu').addEventListener('click', function(){
+        presion.play();
+    })
