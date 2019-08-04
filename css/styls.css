@@ -552,25 +552,63 @@ font-weight: normal;
   background: linear-gradient(270deg, #f52c54, #983ce9, #fc29a1, #f52c54, #983ce9, #fc29a1, #f52c54, #983ce9 );
   background-size: 400% 400%;
   -webkit-animation: footeranimation 30s ease infinite;
-  -moz-animation: footeranimatio 30s ease infinite;
-   animation: footeranimatio 30s ease infinite;
+  -moz-animation: footeranimation 30s ease infinite;
+   animation: footeranimation 30s ease infinite;
 }
 
-@-webkit-keyframes footeranimatio {
+@-webkit-keyframes footeranimation {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@-moz-keyframes footeranimatio {
+@-moz-keyframes footeranimation {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@keyframes footeranimatio { 
+@keyframes footeranimation { 
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
 
+/************SCROLL**************/
 
+body::-webkit-scrollbar {
+  width: 17px;     
+  background: #F7FCFF;
+  background-size: 400%;
+  width: 1em;
+}
 
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right,#ff8a00,#da1b60);
+  border-bottom: 1px solid #da1b60!important;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E92042;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #0D0139;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  width: 10px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
+
+::-webkit-scrollbar { 
+  width:.5em; height:.5em;
+}
