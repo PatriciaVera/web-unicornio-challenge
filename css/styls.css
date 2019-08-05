@@ -42,16 +42,16 @@ a {
 }
 
 .menu {
-  padding: 1em 2em 1em 2em;
+  padding: 2em 1em 1em 1em;
   position: fixed;
   background: #FCFCFC;
   z-index: 12;
   top: -12px;
   margin: auto;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .menu .btn-menu {
@@ -71,9 +71,10 @@ a {
   color: #E92042;
 }
 
+/*
 .menu i {
-  margin-right: 5px;
-}
+    margin-left: -65px;
+}*/
 
 .logo{
   position: relative;
@@ -89,6 +90,8 @@ a {
   padding: 300px 18px 20px 18px;
   position: relative;
 }
+
+
 
 .icons-movil {
   justify-content: center;
@@ -119,8 +122,8 @@ a {
 }
 
 .title {
-  padding: 15px 0px 20px 10px;
-  margin: 60px 10px 20px 30px;
+  padding: 15px 0px 20px 0px;
+  margin: 80px 0px 5px 0px;
 }
 
 .container-title-movil {
@@ -145,6 +148,9 @@ a {
   font-size: 2em;
   color: #0D0139;
   padding-top: 10%;
+  position: relative;
+  display: block;
+  right: 1%;
 }
 /****************EFECTOS MENU****************/
 
@@ -178,7 +184,7 @@ header .menu .logo .btn-menu {
     flex-direction: row;
     justify-content: space-between;
     padding: 1em;
-    width: 100%;
+    width: 100px;
   }
   header .menu .btn-menu {
     display: inline-block;
@@ -186,16 +192,23 @@ header .menu .logo .btn-menu {
   }
   .menu-responsive-home{
     width: 100%;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: inline-block;
+    margin: auto;
+    vertical-align: middle;
+    align-items: normal;
   }
   .btn-menu{
     position: relative;
-    left: 135%;
+    left: 170px;
   }
   header .menu .enlaces {
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
   }
 }
@@ -295,6 +308,15 @@ font-weight: normal;
   background-color: #FCFCFC;
   height: 100px;
   padding: 2% 3% 2% 3%;
+  margin: auto;
+  vertical-align: middle;
+  box-shadow: -2px 8px 7px -2px rgba(212,220,230,0.8);
+}
+
+#icons-container-escritorio {
+  background-color: #FCFCFC;
+  height: 100px;
+  padding: 2% 3% 2% 3%;
   margin: 2.5%;
   vertical-align: middle;
   box-shadow: -2px 8px 7px -2px rgba(212,220,230,0.8);
@@ -335,16 +357,19 @@ font-weight: normal;
 }
 
 #icons-rocket-movil {
-  position: relative;
-  top: 10%;
-  left: 165px;
-  right: 50%;
-  margin: auto;
+    position: relative;
+    padding-top: 15%;
+    margin: auto;
+    padding-bottom: 3%;
 }
 
 .rocket-container {
   margin-top: 5%;
   margin-bottom: 10%;
+}
+
+.title-sobremi-movil-row {
+   justify-content: center;
 }
 
 
@@ -381,22 +406,29 @@ font-weight: normal;
 
   .title-movil {
     position: relative;
-    margin-top: 5%;
-    left: 175px;
-    right: 50%;
+    margin-top: 6%;
   }
 
   #parrafo-description-movil {
     text-align: center;
     position: relative;
-    left: 4%;
     background-color: #FCFCFC;
-    height: 115px;
-    width: 90%;
-    padding: 2%;
+    height: 100%;
+    width: auto;
+    padding: 5%;
     margin: 1%;
     vertical-align: middle;
     box-shadow: -2px 8px 7px -2px rgba(212,220,230,0.8);
+  }
+  
+  .sobremi-container-row{
+    padding: 0px 20px 0px 20px;
+  }
+  
+  .p-sobremi {
+    vertical-align: middle;
+    justify-content: center;
+    display: contents;
   }
 
   /**********PROYECTOS***********/
@@ -431,26 +463,21 @@ font-weight: normal;
 
 
   #img-proyect {
-    width: 26%;
+    margin: 3%;
+    width: 30%;
+    height: auto;
     margin: 10px 10px 10px 10px;
     cursor: pointer;
 }
 
 #img-proyect:active {
-  width: 32%;
+  width: 100%;
   overflow: hidden;
   -webkit-box-shadow: 13px 13px 9px -6px rgba(14,1,57,0.5);
   -moz-box-shadow: 13px 13px 9px -6px rgba(14,1,57,0.5);
   box-shadow: 13px 13px 9px -6px rgba(14,1,57,0.5);
 }
 
-#img-proyect-movil:active {
-  width: 50%;
-  overflow: hidden;
-  -webkit-box-shadow: 13px 13px 9px -6px rgba(14,1,57,0.5);
-  -moz-box-shadow: 13px 13px 9px -6px rgba(14,1,57,0.5);
-  box-shadow: 13px 13px 9px -6px rgba(14,1,57,0.5);
-}
 
 
 .img-proyect-container {
@@ -461,8 +488,14 @@ font-weight: normal;
 }
 
 .proyect-movil {
-  margin: 1rem;
-  padding: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .title-movil-proyect {
@@ -471,13 +504,12 @@ font-weight: normal;
 
 #img-proyect-movil {
   margin: 2%;
-  width: 40%;
+  width: 100%;
 }
 
 .img-proyect-container-movil {
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
+  margin-top: 6%;
+  margin-bottom: 20%;
 }
 
 /****************FOOTER****************/
